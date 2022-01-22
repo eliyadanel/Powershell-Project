@@ -1,4 +1,6 @@
 #Remote Installation on all LAN computers
+#Important note: This script turns winodws defender and firewall features. I recommend running this on VMs only. 
+
 $Choice = Read-Host -Prompt "Would you like to insert the list of computer names by yourself or have it prepared by the tool? Please type y or n"
 if($choice -eq 'y') {
     Write-Host "Generating list of the computers in your domain based on your AD database."
